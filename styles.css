@@ -6,6 +6,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: red;
 }
+font {
+	font-color: black;
+}
 
 #wrapper {
 	max-width: 940px;
