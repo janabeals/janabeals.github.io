@@ -75,13 +75,39 @@ bocy {
 ====================================================================*/
 
 @media (min-width: 769px) {
-	/* Header andBanner
+	
+	.main-wrapper,
+	.content-row,
+	.col {
+		height: 100%;
+	}
+	.main-wrapper {
+		width: 95%;
+		margin: auto;
+	}
+	
+	/* Header, Banner and Footer Layout
         ====================================================*/
+        
+	.main-header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index=100;
+	}
 	
 	.main-logo,
 	.main-nav li {
-		float: left;
+		position: absolute;
 	}
+	.extra-content,
+	.main-banner {
+		display: block;
+	}
+	.content-row {
+		position: relative;
+	}
+
 	.main-logo {
 		margin-right: 50px;
 	}
