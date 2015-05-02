@@ -1,185 +1,585 @@
-@charset “UTF-8”;
+@charset "utf-8";
+/* CSS Document */
+/* RED CHOCOLATE #A30018 #332828 BLUE #48525c*/
 
-/* sets default values to zero, if not the browser will take control and add its default value */
+ /*Global*/
 
 * {
+  box-sizing: border-box;
+}
 
-margin:0;
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background: url('../img/paper.jpg');
+}
 
-padding:0;
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;
+}
+
+/* Nav */
+
+nav {
+  text-align: right;
+  padding: 10px 0;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+/*  margin: 280px 0 20px;*/
+}
+
+nav ul {
+  list-style: none;
+  margin: 50px 10px;
+  font-size: 1.25em;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* links */
+
+a {
+  color: #eee;
+}
+
+nav a {
+  color: #48525c;
+  padding: 20px 47px 20px 32px;
 
 }
 
-/* adjust the paragraph’s line-height to be 1.25em; (this will add space between lines) */
+nav a.selected {
+  background: url("../img/home.png") center no-repeat;
+  color: #A30018;
+}
 
-/* adjust the paragraph’s margin-bottom to be 1em; (this will add space between paragraphs) */
+nav a:hover {
+  color: #A30018;
+  transition: 1s;
+}
+
+/* Main Text Styles*/
+
+body {
+  color: #332828;
+  margin: 0;
+  font: 1em/1.5 Ubuntu, Helvetica, Arial, sans-serif;
+}
+
+h1 {  
+  font-size: 2em; /* 32px/16px  */
+  color: #A30018;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5em; /* 24px/16px  */
+  font-weight: normal;
+  margin: 0 0 -.5em;
+
+}
+
+h3 {
+  font-size: 1em; /* 20px/16px  */
+  color: #48525c;
+}
 
 p {
+	font-size: 1em; /* 16px  */
+}
 
-line-height:1.25em;
+ul {
+	font-size: 1em; /* 20px/16px  */
+}
 
-margin-bottom: 1em;
+.bullet {
+	list-style-image: url("../img/bullet.png");
+}
+
+/* Main Styles */
+
+div {
+  background: radial-gradient(circle at top, white, #EEEEEE 80%);
+/*  width: 940px;*/
+  margin: 0 auto 50px;
+  padding: 15px 125px;
+  box-shadow: 0 15px 20px -12px rgba(0,0,0, .7);
+  border-radius: 5px;
+}
+
+.main-header {
+  position: relative;
+  margin: 0 auto 30px;
+	padding: 40px 0 50px;
+	height: 400px; 
+  width: 940px; /*36.72%;*/
+	background: transparent url('../img/heading.png') no-repeat center;
+}
+
+.container1 {
+  max-width: 70%;
+  margin: 2.5% 15% 0;
+}
+
+.container2 {
+  max-width: 70%;
+  margin: 2.5% 15% 0;
+}
+
+.blocks {
+  max-width: 48%;
+  display: inline-block;
+}
+
+.blocks:last-child {
+  float: right;
+}
+
+.footer {
+  margin-top: 100px;
+  background: #48525c;
+  text-align: right;
+  padding: 1px 30px 15px;
+
+  position: relative;
+  bottom: 0;
+}
+
+.footer p {
+  color: gray;
+  margin-bottom: -.25em;
+}
+
+/* Home Specific ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.salutation {
+  font-size: 2em; /* 32px/16px  */
+  color: #A30018;
+  line-height: 1em;
+}
+
+.blocks a {
+  color: #48525c;
+  transition: 1s;
+}
+
+.blocks a:hover {
+  color: #A30018;
+}
+
+#pic {
+  padding-top: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#pic img {
+  box-shadow: 0 15px 20px -12px rgba(0,0,0, .7);
+  border-radius: 5px;
+
+  width: 100%;
+  height: auto;
+}
+
+
+/* Resume Specific ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.breathing-room {
+  padding-right: 0;
+}
+.programs h2 {
+  line-height: 2em;
+}
+
+.programs {
+  list-style: none;
+  margin-left: -20px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  -webkit-filter: grayscale(.75);
+}
+
+.programs:hover {
+  -webkit-filter: grayscale(0);
+}
+
+
+.MO::before {
+  content: url(../img/icons/MO.png);
+  margin-right: 8px;
+}
+
+.AI::before {
+  content: url(../img/icons/AI.png);
+  margin-right: 8px;
+}
+
+.PS::before {
+  content: url(../img/icons/PS.png);
+  margin-right: 8px;
+}
+
+.ID::before {
+  content: url(../img/icons/ID.png);
+  margin-right: 8px;
+}
+
+.HTML::before {
+  content: url(../img/icons/HTML.png);
+  margin-right: 8px;
+}
+
+.CSS::before {
+  content: url(../img/icons/CSS.png);
+  margin-right: 8px;
+}
+
+.GH::before {
+  content: url(../img/icons/GH.png);
+  margin-right: 8px;
+}
+
+.ST::before {
+  content: url(../img/icons/ST.png);
+  margin-right: 8px;
+  -webkit-filter: grayscale(.75);
+}
+
+
+/* Portfolio Specific ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51,51,51,0.7);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay:active {
+  visibility: hidden;
+}*/
+/* Cannot get overlay to work w/o JS */
+
+.gallery {
+  max-width: 960px;
+  margin: auto;
+/*37.5%*/
+}
+
+.thumbnail {
+  background: white;
+  width: 200px; 
+  height: 250px;
+  display: inline-block;
+  margin: 30px 56.66665px;
+  padding: 0;
+/*20.8333%x26.41666%*/
 
 }
 
-/* change the heading1 to be navy color */
+.fullsize {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: none;
 
-h1 {
+  overflow: scroll;
 
-color: Red
-;
-
+  visibility: hidden;
 }
 
-/* the main shell holding all div tags */
-
-#wrapper {
-
-width: 755px;
-
-position:relative;
-
-margin: auto;
-
-background-color:yellow;
-
-
+.fullsize ul li{
+  list-style: none;
 }
 
-/* top navigation div */
+.fullsize img {
+  position: absolute;
+  display:block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: contain;
 
-#navcontainer ul {
+/*  box-shadow: 0 15px 20px -12px rgba(0,0,0, .7);*/
+  border-radius: 5px;
 
-background-color: #369;
+  visibility: hidden;
+  opacity: 0;
 
-float: left;
-
-width: 100%;
-
-padding-right: 32px; /* bullets are included in the padding area */
-
- /* removing bullets requires padding to be added at the right */
-
+  transition: all .5s;
 }
 
-#navcontainer ul li { /* inline keeps layout horizontal */
-
-display: inline;
-
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #48525c;
+  visibility: visible;
 }
 
-#navcontainer ul li a {
-padding: 0.2em 1em;
+#full1:target {
+  visibility: visible;
+  opacity: 1;
 
-text-decoration: none;
-
-float: left;
-
-border-right: 1px solid #fff;
-
-color: #fff;
-
+  width: auto;
+  height: auto;
 }
 
-/* change the background-color to be #369 */
-
-#navcontainer ul li a:hover { /* controls the over or hover state of rollover */
-
-background-color: #yellow;
-
+#full2:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-#navcontainer ul li #current { /* sets the link of the active page tab color to be different */
-
-background-color: #369;
-
+#full3:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-#main {
-
-float: left;
-
-width: 100%;
-
-background-color:#CCFFCC;
-
-padding-left:2em;
-
+#full4:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* adding margin-left will move the UnorderedList inside wrapper */
-
-#main ul {
-
-margin-left:40px;
-
+#full5:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* float picture left, add margin to keep text away from image, add width */
-
-#pictureL {
-
-width: 300px;
-
-float:left;
-
-margin:20px;
-
+#full6:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* float picture right, add margin to keep text away from image, add width */
-
-#pictureR {
-
-width: 50%;
-
-float:right;
-
-margin:10px;
-
-}
-/* set text color to white, background color to #036, position to absolute */
-
-/* bottom postion to 0px, and width to 100% */
-
-#footer {
-
-color:#FFF;
-
-background-color: #036;
-
-bottom: 0px;
-
-width: 100%;
-
-padding-right: 32px; /* fits content to match navcontainer width */
-
+#full7:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* align the text to center, and margin 0 */
-
-#footer p {
-
-text-align:center;
-
-margin:0;
-
+#full8:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* sets the anchors in the footer id to be white and no underline */
-
-#footer a {
-
-color:#FFF;
-
-text-decoration:none;
-
+#full9:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-#footer a:hover {
+.thumbnail {
+  /* parent for caption */ 
+  position: relative;
+  overflow: hidden;
+}
 
-color:#369;
+/* Caption - First Frame */
+.thumbnail p {
+  background: linear-gradient(to top, rgba(72,82,92,.85), transparent 100%);/*rgba(72,82,92,.65);*/
+  font-size: 1em;
+  font-style: italic;
+  padding: 3em .25em .25em .25em;
+  text-align: center;
 
-text-decoration:underline;
+  position: absolute;
+  margin: 0;
+  /* value is height of image */   
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+}
 
+/* Caption - Last Frame */
+.thumbnail:hover p {
+   -webkit-animation: slideInUp .5s forwards;
+}
+
+  @-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Desktop - Smaller */
+
+@media screen and (max-width: 1950px) {
+  div {
+    padding: 15px 50px;
+  }
+}
+/* eff you, columns */
+@media screen and (max-width: 1610px) {
+  .programs {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+/* eff you, clearfix */
+@media screen and (max-width: 1350px) {
+  .blocks {
+    padding: 15px 30px;
+  }
+}
+
+/* Tablet - Larger */
+
+@media screen and (max-width: 1220px) {
+  .main-header {
+    width: 683.2px;
+    background-size: contain;
+  }  
+  .blocks {
+    max-width: 100%;
+  }
+  .blocks:last-child {
+  float: none;
+  }
+  div {
+    padding: 15px 125px;
+  }
+
+  .programs {
+    margin-left: -40px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  .programs {
+    padding-left: 65px;
+  }
+
+  .gallery {
+    width: 780px;
+  }
+  .thumbnail {
+    margin: 30px 28px;
+  }
+}
+
+/* Tablet - Smaller*/ 
+
+@media screen and (max-width: 786px) {
+  .main-header {
+    width: 90%;
+    height: 310px;
+  }
+  nav {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav ul {
+    padding-left: 0;
+  }
+  nav a {
+    padding: 20px 13px;
+  }
+  nav a.selected {
+    background: transparent;
+  }
+
+  div {
+    padding: 15px 50px;
+  }
+  .programs {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  .gallery {
+    width: 476px;
+  }
+  .thumbnail {
+    margin: 30px 16px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+  .main-header {
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  div {
+    padding: 15px 25px;
+  }
+  nav {
+    bottom: -17px;
+  }
+  nav ul {
+    font-size: 1em;
+  }
+  nav a {
+    padding: 20px 11px;
+  }
+
+  .container1 p {
+    font-size: .75em;
+  }
+  .blocks a {
+    font-size: .75em;
+  }
+
+  .gallery {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .thumbnail {
+    margin: 30px 16px;
+  }
+
+  .salutation {
+    font-size: 1.5em;
+  }
 }
