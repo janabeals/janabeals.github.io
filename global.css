@@ -1,0 +1,115 @@
+@charset “UTF-8”;
+
+/*global*/
+
+* {
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+body {
+	font-family: 'ubuntu', sans-serif;
+	background: url('../img/BeigeTextureWallpaper.jpg');
+}
+a {
+	text-decoration: none;
+}
+.clearfix {
+	clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;
+}
+p {
+	line-height: 1.25em;
+	margin-bottom: 1em;
+	margin-right: 50px;
+	margin-left: 0px;
+}
+
+h1 {
+	color: #000000;
+}
+
+#wrapper {
+width: 755px;
+position:relative;
+margin: auto;
+background-color:yellow;
+}
+
+/*nav*/
+#navcontainer ul {
+	background-color: #C0C7C1;
+	float: left;
+	width: 96.7%;
+	padding-right: 0PX;
+}
+
+#navcontainer ul li { 
+display: inline;
+}
+
+#navcontainer ul li a {
+padding: 0.2em 1em;
+text-decoration: none;
+float: left;
+border-right: 1px solid #fff;
+color: #000;
+}
+
+#navcontainer ul li a:hover {
+	background-color: #6EE4A4;
+}
+
+#navcontainer ul li #current { 
+	background-color: #3C45EC;
+}
+
+#main {
+	float: left;
+	width: 100%;
+	background-color: url('../img/BeigeTextureWallpaper.jpg');
+	padding-left: 40px;
+	padding-right: 10px;
+}
+
+#main ul {
+margin-left:30px;
+}
+
+#pictureL {
+width: 300px;
+float: right;
+margin:20px;
+}
+
+#pictureR {
+	width: 75%;
+	float: right;
+	margin-right: px;
+	margin-left: px;
+}
+
+#footer {
+	color: #000;
+	background-color: #FCFF28;
+	bottom: 0px;
+	width: 100%;
+	padding-right: 15px;
+	
+
+}
+
+#footer p {
+text-align:center;
+margin:0;
+}
+
+#footer a {
+color:#FFF;
+text-decoration:none;
+}
+
+#footer a:hover {
+color:#369;
+text-decoration:underline;
+}
